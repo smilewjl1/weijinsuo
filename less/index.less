@@ -1,0 +1,80 @@
+@import "visiables.less";
+
+/*header部分样式代码*/
+#header{
+    .row{
+        >div{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-right: 1px solid @border-color;
+            font-size: 12px;
+            &:last-child{
+                border-right:none;
+            }
+            >a{
+                text-decoration: none;
+                color: @a-color;
+                &:hover{
+                    color:@main-color;
+                }
+            }
+        }
+    }
+}
+/*nav部分样式代码*/
+#nav{
+    background-color: #fff;
+	margin-bottom: 0px;
+    .navbar-header{
+        .navbar-toggle{
+			margin-top: 23px;
+		}
+        >a{
+            height: 80px;
+            line-height: 50px;
+            >i{
+                font-size: 30px;
+                &:first-child{
+                    color:@main-color;
+                }
+                &:nth-child(2){
+                    color:#333;
+                }
+            }
+        }
+    }
+    .collapse{
+        .navbar-nav{
+            >li{
+                >a{
+                    height: 80px;
+                    line-height: 50px;
+                    &:hover{
+                        border-bottom: 2px solid @main-color;
+                    }
+                }
+                &.active{
+                    >a{
+                        background-color: #fff;
+                        border-bottom: 2px solid @main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/*轮播部分样式代码*/
+#slide{
+    .large-image{
+        display: block;
+        height: 410px;
+        background-position: center center;
+    }
+    .small-image{
+        display: block;
+        img{
+            width: 100%;
+        }      
+    }
+}
